@@ -15,14 +15,14 @@ if(key == ""):
 model = ChatOpenAI(model="gpt-3.5-turbo")
 
 prompt = ChatPromptTemplate.from_messages([
-    ("human", "Hello!!")
+    #("human", "hello!!")
 ])
 
-result = model.invoke(input="hello!!")
+response = model.invoke(input="hello!!")
 
-print(result)
+print(response.content)
 
 
-
+# chain??
 # 가능하다면 프로그램을 띄우는 느낌? -> PyInstaller
 # langchain_openai를 이용해서 gpt-3.5-turbo 사용
